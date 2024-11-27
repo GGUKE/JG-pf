@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/lenis.js"></script>
+<script src="js/main.js"></script>
+</head>
+
+<body>
+	
+<div class="wrapper">
+	<header id="header">
+		<div class="header_inner">
+			<div class="logo"><a href="">[ front-end. ]</a></div>
+			<div class="tab">
+				<a href="">
+					<span class="open"><i class="fa-solid fa-bars"></i></span>
+					<span class="close"><img src="image/tab_close.png" alt="tab close"></span>
+				</a>
+			</div>
+		</div>
+	</header>
+	<nav id="gnb">
+		<div class="gnb_inner">
+			<ul>
+				<li><a href=""><span>HOME</span></a></li>
+				<li><a href=""><span>ABOUT ME</span></a></li>
+				<li><a href=""><span>PROJECT</span></a></li>
+				<li><a href=""><span>CONTACT</span></a></li>
+			</ul>
+		</div>
+	</nav>
+	<div id="main-page">
+		<img src="image/background1.png" alt="background1">
+		<div class="inner">
+			<div class="title serif">
+				<strong>portfolio.</strong>
+				<span>[jeongguk]</span>
+			</div>
+			<div class="main-text">
+				<p>I am a developer who is not afraid to</p>
+				<p>try new things and keeps trying until</p>
+				<p>I figure out what I don't know.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<section id="page1">
+	<div class="main-about">
+		<div class="flex-cont">
+			<div class="img">
+				<div class="img-wrap scale-ani">
+					<img src="image/main_about1.jpg" alt="main about1">
+				</div>
+			</div>
+		
+			<div class="con">
+				<div class="main-tit serif">About me</div>
+				<div class="txt">
+					<p>새로운 시도를 두려워하지 않고, 모르는 것이 있다면 그에 대해 알 때까지 끊임없이 노력하는 개발자입니다. 저는 항상 도전적인 과제를 통해 성장해 왔으며, 문제를 해결하기 위해 다양한 접근 방식을 탐구하는 것을 즐깁니다.</p>
+					<p class="serif">I am a developer who is not afraid to try new things and keeps trying until I figure out what I don't know.</p>
+				</div>
+			</div>
+		</div>
+		<div class="main-typo">
+			<div><span class="serif">ABOUT GROWTH</span></div>
+			<div>PASSION</div>
+		</div>
+	</div>	
+</section>
+
+<section id="page2">
+	<div class="title serif">skills</div>
+	<div class="inner">
+		<div id="main">
+			<div class="swiper mainSwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="">
+							<p class="label">specs1</p>
+							<p class="title">Frontend Dev</p>
+							<p class="description">
+								<span>JavaScript / EcmaScript 2024</span>
+								<span>React / Axios, Redux, Router</span>
+								<span>Node.js / Express, EJS</span>
+								<span>MongoDB</span>
+							</p>
+							<div class="square_line"></div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="">
+							<p class="label">specs2</p>
+							<p class="title">Web</p>
+							<p class="description">
+								<span>HTML Accessbility</span>
+								<span>CSS + SASS Prefix</span>
+								<span>jQuery Library</span>
+							</p>
+							<div class="square_line"></div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="">
+							<p class="label">specs3</p>
+							<p class="title">Mobile Dev</p>
+							<p class="description">
+								<span>PWA : Progressive Web App</span>
+								<span>Responsive CSS</span>
+								<span>Tailwind CSS Framework</span>
+							</p>
+							<div class="square_line"></div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="">
+							<p class="label">I aspire to go further and grow.</p>
+							<p class="title"></p>
+							<div class="square_line"></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="page3">
+	<div class="title serif">Project</div>
+	<div class="inner">
+		<div class="info">
+			<a href="">Wylie</a>
+			<div class="sub-text">
+				<ul>
+					<li>
+						<ul class="iconskill">
+							<li class="react">React</li>
+							<li class="redux">Redux</li>
+							<li class="javascript">JavaScript</li>
+							<li class="gsap">GSAP</li>
+							<li class="pwa">PWA</li>
+						</ul>
+					</li>
+					<li>React를 활용하고 Redux로 상태 관리하여 제작한 클론 사이트입니다.<br>모바일과 PC에서 볼 수 있게 최대한 반응형을고려하여 작업하였으며 Redux, redux-toolkit에 대한 학습이 되었습니다. 또한, PWA(progressive web app)를 적용하여 모바일 기기에서도 원활한 사용자 경험을 제공하며 오프라인에서도 작동할 수 있도록 만들었습니다.</li>
+					<li><a href="https://www.daum.net" class="link">URL : asdsadasdsadsadsa</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="info">
+			<a href="">Art center NABI</a>
+			<div class="sub-text">
+				<ul>
+					<li>
+						<ul class="iconskill">
+							<li class="react">React</li>
+							<li class="redux">Redux</li>
+							<li class="javascript">JavaScript</li>
+							<li class="gsap">GSAP</li>
+						</ul>
+					</li>
+					<li>React를 활용한 갤러 클론 코딩입니다.<br>Movie, Tv, Search 페이지로 구성되어 있으며. 반응형으로 제작되었습니다. useState() 함수를 이용해 메인 슬라이더의 영상을 제어했습니다.
+					</li>
+					<li><a href="" class="link">URL : asdsadasdsadsadsa</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="info">
+			<a href="">O' kichen</a>
+			<div class="sub-text">
+				<ul>
+					<li>
+						<ul class="iconskill">
+							<li class="pwa">PWA</li>
+							<li class="tailwind">Tailwind CSS</li>
+							<li class="swiperjs">SwiperJS</li>
+							<li class="gsap">GSAP</li>
+						</ul>
+					</li>
+					<li>URL로 접속하여 쉽게 설치하고 이용할 수 있는 프로그레시브 웹 앱입니다.<br>SwiperJS 라이브러리를 통해 컨텐츠와 광고 배너를 둘러볼 수 있게 제작하였으며 검색 버튼을 누르면 검색 화면으로 이동할 수 있습니다. 검색 화면의 '최근에 본 레시피' 섹션에서 '더보기' 버튼을 누르면 상세 페이지로 넘어갈 수 있고, 페이지 이동에 따라 헤더의 디자인과 기능이 변하도록 제작했습니다.
+				   </li>
+					<li><a href="" class="link">URL : asdsadasdsadsadsa</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="info">
+			<a href="">Wconcept</a>
+			<div class="sub-text">
+				<ul>
+					<li>
+						<ul class="iconskill">
+							<li class="html">HTML</li>
+							<li class="css">CSS</li>
+							<li class="javascript">JavaScript</li>
+						</ul>
+					</li>
+					<li>Wconcept 프로젝트는 최신 패션 트렌드를 반영한 쇼핑몰 웹사이트입니다.<br>HTML과 CSS로 깔끔하고 직관적인 쇼핑몰 레이아웃을 설계하고, jQuery를 통해 제품 상세 페이지와 슬라이더를 동적으로 구현했습니다. Figma에서 UI/UX 디자인을 반영하여 쇼핑몰의 브랜드 이미지와 사용자의 편리성을 고려한 디자인을 구현하였습니다.
+					</li>
+					<li><a href="" class="link">URL : asdsadasdsadsadsa</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+</section>
+
+<section id="page4">
+	<div class="title serif">Open Source</div>
+	<div class="main-product">
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="thumb">
+						<a href=""><img src="image/project1.png" alt="project1"></a>
+					</div>
+					<div class="desc">
+						<div class="name serif">React AJAX</div>
+						<p>
+							<span>React Hook 함수 활용, useState() useEffect()</span>
+							<span>AJAX Fetch API를 활용하여 데이터 로드</span>
+							<span>데이터 로드 과정에서 로딩 바를 구현</span>
+						</p>
+						<a href="https://jg-open-3.vercel.app/" target="_blank" class="btn">View More</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="thumb">
+						<a href=""><img src="image/project2.png" alt="project2"></a>
+					</div>
+					<div class="desc">
+						<div class="name serif">Purito Seoul</div>
+						<p>
+							초소형 냉온열 갈바닉 진동<br>
+							멀티 뷰티 디바이스
+						</p>
+						<a href="" class="btn">View More</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="thumb">
+						<a href=""><img src="image/project3.png" alt="project3"></a>
+					</div>
+					<div class="desc">
+						<div class="name serif">Lifeplus</div>
+						<p>
+							헤드 교체 식 LED 미세전류 진동<br>
+							멀티 뷰티 디바이스
+						</p>
+						<a href="" class="btn">View More</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="thumb">
+						<a href=""><img src="image/project4.png" alt="project4"></a>
+					</div>
+					<div class="desc">
+						<div class="name serif">Men Noblesse</div>
+						<p>
+							건강한 광채를 선사하는<br>
+							디바이스 전용 젤
+						</p>
+						<a href="" class="btn">View More</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="thumb">
+						<a href=""><img src="image/project5.png" alt="project5"></a>
+					</div>
+					<div class="desc">
+						<div class="name serif">b.state design</div>
+						<p>
+							건강한 광채를 선사하는<br>
+							디바이스 전용 젤
+						</p>
+						<a href="" class="btn">View More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer id="footer">
+	<div class="ft-wrap">
+		<div class="ft-left">
+			<div class="ft-logo">
+				<a href=""><span>{</span> GGUKE <span>}</span></a>
+			</div>
+			<div class="ft-info">
+				<p>
+					<span><strong>PHONE</strong>010-0000-0000</span>
+					<span><strong>MAIL</strong>pllbong2020@naver.com</span>
+				</p>
+				<p>
+					<span><strong>GIT</strong>https://github.com/designdigit</span>
+					<span><strong>PORTFOLIO</strong>https://designdigit.github.io/portfolio</span>
+				</p>
+			</div>
+		</div>
+		<div class="ft-right">
+			<div class="ft-link">
+				<a href="">About Us</a>
+				<a href="" class="privacy-btn"><strong>개인정보처리방침</strong></a>
+			</div>
+			<div class="ft-sns">
+				<a href=""><i class="xi-linkedin"></i></a>
+				<a href=""><i class="xi-facebook-official"></i></a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
