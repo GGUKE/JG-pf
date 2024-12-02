@@ -60,7 +60,7 @@ body.active .title.serif {
 	left: 0;
 	top: 0;
 	z-index: 1000;
-	width: 100%;
+	width: 100vw;
 	height: 100px;
 	background-color: transparent;
 	transition: background-color 0.3s;
@@ -69,8 +69,9 @@ body.active .title.serif {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 50px;
+	padding: 0 5vw;
 	height: 100%;
+	box-sizing: border-box;
 }
 
 #header .logo a {
@@ -96,16 +97,9 @@ body.active #header .logo a {
 	margin-top: 0px;
 }
 
-#header .tab span{
-	width: 100%;
-	height: 100%;
-}
-
 #header .header_inner .tab {
 	position: relative;
-	width: 35px;
-	height: 35px;
-	font-size: 35px;
+	font-size: 24px;
 	color: #fff;
 	z-index: 1000;
 }
@@ -158,7 +152,7 @@ body.active #header.on .header_inner .tab .open {
 #header .header_inner .tab .gnb_inner {
 	display: flex;
 	align-items: center;
-	padding: 0 50px;
+	/* padding: 0 50px; */
 	height: 100%;
 }
 #header .header_inner .tab .gnb_inner > ul {
@@ -172,10 +166,9 @@ body.active #header.on .header_inner .tab .open {
 #header .header_inner .tab .gnb_inner > ul > li > a {
 	display: block;
 	position: relative;
-	margin-bottom: 1em;
 	width: 380px;
 	line-height: 2.5em;
-	font-size: 1em;
+	font-size: 1.5rem;
 	font-weight: 500;
 	color: rgba(255,255,255,.75);
 	transition: color 0.3s;
@@ -198,15 +191,6 @@ body.active #header.on .header_inner .tab .open {
 	border-color: #fff;
 }
 
-/* @media only screen and (max-width : 1024px) {
-	#header .logo a {
-	
-	}
-} */
-
-@media only screen and (max-width : 768px) {
-
-}
 
 /* main-page */
 
@@ -244,35 +228,29 @@ body.active #header.on .header_inner .tab .open {
 }
 #main-page .main-text {
 	position: absolute;
-	right: 20%;
+	right: 15%;
 	bottom: 10%;
+	transition: all 0.3s;
 }
 #main-page .main-text p {
 	display: block;
 	color: #fff;
 	opacity: 0.75;
 	line-height: 2;
-	font-size: 0.875em;
+	font-size: 0.8vw;
 	font-weight: 300;
 	letter-spacing: 1px;
 }
 
-/* @media only screen and (max-width : 1024px) {
-	#main-page .title strong {
-		font-size: 180px;
+@media only screen and (max-width: 768px){
+	#main-page .main-text{
+		bottom: 20%;
+
 	}
-	#main-page .title span {
-		font-size: 25px;
+	#main-page .main-text p {
+		font-size: 1.3vw;
 	}
 }
-@media only screen and (max-width : 768px) {
-	#main-page .title strong {
-		font-size: 130px;
-	}
-	#main-page .title span {
-		font-size: 20px;
-	}
-} */
 
 /* start */
 
@@ -356,6 +334,7 @@ body.active #header.on .header_inner .tab .open {
 }
 #page1 .main-about .flex-cont .con .txt {
 	position: relative;
+	padding-right: 50px;
 }
 
 #page1 .main-about .flex-cont .con .txt p {
@@ -725,11 +704,16 @@ body.active #main .swiper-slide a p.description span::before{
 	background-color: rgba(7,50,86,0.5);
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
 	#page3 .inner {
 		padding: 3.13em 50px;
 	}
 }
+/* @media only screen and (max-width: 1024px) {
+	#page3 .inner {
+		padding: 3.13em 50px;
+	}
+} */
 
 /* page4 */
 
@@ -790,6 +774,9 @@ body.active #main .swiper-slide a p.description span::before{
 	line-height: 2;
 	text-align: left;
 	font-size: 0.875em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 #page4 .main-product .desc p span::before {
 	content: "";
@@ -884,6 +871,9 @@ body.active #main .swiper-slide a p.description span::before{
 	margin: 5px 0;
 	padding: 5px 0;
 }
+#footer .ft-wrap .ft-info p span a {
+	color: #fff;
+}
 
 #footer .ft-wrap .ft-right {
 	margin-top: 10px;
@@ -916,13 +906,12 @@ body.active #main .swiper-slide a p.description span::before{
 	margin-left: 20px;
 	color: #999;
 }
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
 	#footer .ft-wrap {
 		padding: 0 50px;
 	}
-	
 }
+
 @media only screen and (max-width: 768px) {
 	#footer {
 		padding: 3.13em 0 30px
