@@ -1,56 +1,41 @@
 const ui={
 	init: function(){
 		this.header();
-		this.slider();
 		this.page1();
 		this.page2();
 		this.page3();
+		this.page4();
 	},
 	header(){
-
-		let tab = document.querySelector("#header .tab");
-		let gnb = document.querySelector("#gnb");
-		let spans = document.querySelectorAll("#header .tab span");
-	  
-		document.querySelector("#header .tab span.open").classList.add("active");
-	  
-		tab.addEventListener("click", function(e) {
-			e.preventDefault();
+		document.querySelector('.tab').addEventListener('click', function(e) {
+			e.preventDefault(); 
 			
-			let tabClick = tab.classList.toggle("open");
-			gnb.classList.toggle("open", tabClick);
+			let tab = this.closest('.tab');
+			tab.classList.toggle('active');
+		});
+
+		let gnbClick=document.querySelectorAll("#header .gnb_inner ul li");
+		let sectionArr=document.querySelectorAll("section");
+
 		
-			
-			spans.forEach(span => span.classList.remove("active"));
-			document.querySelector(`#header .tab span.${isOpen ? 'close' : 'open'}`).classList.add("active");
+		gnbClick.forEach((item, i) => {
+			item.addEventListener("click", (e) => {
+				e.preventDefault();
 
-		});
-
-    },
-	slider(){
-
-		const prdSwiper=new Swiper(".main-product .swiper", {
-			loop: true,
-			speed: 2000,
-			slidesPerView: 1.5,
-			centeredSlides: true,
-			spaceBetween: 20,
-			autoplay: {
-				delay: 4000
-			},
-			breakpoints: {
-				769: {
-					slidesPerView: 3,
-					spaceBetween: 20
-				},
-				1025: {
-					slidesPerView: 4.5,
-					spaceBetween: 50
+				if(i == 0){
+					gsap.to(window, {
+						scrollTo: 0, duration: 0.3
+					})
 				}
-			}
+				else{
+					gsap.to(window, {
+						scrollTo: sectionArr[i-1], duration: 0.3
+					})
+				}
+			});
 		});
-
-	},
+		
+    },
 	page1(){
 
 		let logoColor=document.querySelector("#header");
@@ -59,7 +44,7 @@ const ui={
 			scrollTrigger: {
 				trigger: "#page1",
 				scrub: true,
-				start: "top top",
+				start: "top 1%",
 				// markers: true,
 				onEnter: function(){
 					logoColor.classList.add("on");
@@ -245,7 +230,30 @@ const ui={
 			});
 		});
 		
+	},
+	page4(){
+		const prdSwiper=new Swiper(".main-product .swiper", {
+			loop: true,
+			speed: 2000,
+			slidesPerView: 1.5,
+			centeredSlides: true,
+			spaceBetween: 20,
+			autoplay: {
+				delay: 4000
+			},
+			breakpoints: {
+				769: {
+					slidesPerView: 3,
+					spaceBetween: 20
+				},
+				1025: {
+					slidesPerView: 4.5,
+					spaceBetween: 50
+				}
+			}
+		});
 	}
+	
 }
 
 window.addEventListener("load", function(){
