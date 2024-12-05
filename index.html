@@ -15,7 +15,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
 <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/lenis.js"></script>
 <script src="js/main.js"></script>
 </head>
@@ -59,79 +58,266 @@
 	</div>
 </div>
 
-<section id="page1">
-	<div class="main-about">
-		<div class="flex-cont">
-			<div class="img">
-				<div class="img-wrap scale-ani">
-					<img src="image/main_about1.jpg" alt="main about1">
+<section>
+	<div id="page1">
+		<div class="main-about">
+			<div class="flex-cont">
+				<div class="img">
+					<div class="img-wrap scale-ani">
+						<img src="image/main_about1.jpg" alt="main about1">
+					</div>
+				</div>
+			
+				<div class="con">
+					<div class="main-tit serif">About me</div>
+					<div class="txt">
+						<p>새로운 시도를 두려워하지 않고, 모르는 것이 있다면 그에 대해 알 때까지 끊임없이 노력하는 개발자입니다. 저는 항상 도전적인 과제를 통해 성장해 왔으며, 문제를 해결하기 위해 다양한 접근 방식을 탐구하는 것을 즐깁니다.</p>
+						<p class="serif">I am a developer who is not afraid to try new things and keeps trying until I figure out what I don't know.</p>
+					</div>
 				</div>
 			</div>
-		
-			<div class="con">
-				<div class="main-tit serif">About me</div>
-				<div class="txt">
-					<p>새로운 시도를 두려워하지 않고, 모르는 것이 있다면 그에 대해 알 때까지 끊임없이 노력하는 개발자입니다. 저는 항상 도전적인 과제를 통해 성장해 왔으며, 문제를 해결하기 위해 다양한 접근 방식을 탐구하는 것을 즐깁니다.</p>
-					<p class="serif">I am a developer who is not afraid to try new things and keeps trying until I figure out what I don't know.</p>
+			<div class="main-typo">
+				<div><span class="serif">ABOUT GROWTH</span></div>
+				<div>PASSION</div>
+			</div>
+		</div>	
+	</div>	
+	<div id="page2">
+		<div class="title serif">skills</div>
+		<div class="inner">
+			<div id="main">
+				<div class="swiper mainSwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="">
+								<p class="label">specs1</p>
+								<p class="titles">Frontend Dev</p>
+								<p class="description">
+									<span>JavaScript / EcmaScript 2024</span>
+									<span>React / Axios, Redux, Router</span>
+									<span>Node.js / Express, EJS</span>
+									<span>MongoDB</span>
+								</p>
+								<div class="square_line"></div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="">
+								<p class="label">specs2</p>
+								<p class="titles">Web</p>
+								<p class="description">
+									<span>HTML Accessbility</span>
+									<span>CSS + SASS Prefix</span>
+									<span>jQuery Library</span>
+								</p>
+								<div class="square_line"></div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="">
+								<p class="label">specs3</p>
+								<p class="titles">Mobile Dev</p>
+								<p class="description">
+									<span>PWA : Progressive Web App</span>
+									<span>Responsive CSS</span>
+									<span>Tailwind CSS Framework</span>
+								</p>
+								<div class="square_line"></div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="">
+								<p class="label">I aspire to go further and grow.</p>
+								<p class="titles"></p>
+								<div class="square_line"></div>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="main-typo">
-			<div><span class="serif">ABOUT GROWTH</span></div>
-			<div>PASSION</div>
 		</div>
 	</div>	
-</section>
-
-<section id="page2">
-	<div class="title serif">skills</div>
-	<div class="inner">
-		<div id="main">
-			<div class="swiper mainSwiper">
+	<div id="page3">
+		<div class="title serif">Project</div>
+		<div class="inner">
+			<div class="info">
+				<a href="">Wylie</a>
+				<div class="sub-text">
+					<ul>
+						<li>
+							<ul class="iconskill">
+								<li class="react">React</li>
+								<li class="redux">Redux</li>
+								<li class="javascript">JavaScript</li>
+								<li class="gsap">GSAP</li>
+								<li class="pwa">PWA</li>
+							</ul>
+						</li>
+						<li>React를 활용하고 Redux로 상태 관리하여 제작한 클론 사이트입니다.<br>모바일과 PC에서 볼 수 있게 최대한 반응형을고려하여 작업하였으며 Redux, redux-toolkit에 대한 학습이 되었습니다. 또한, PWA(progressive web app)를 적용하여 모바일 기기에서도 원활한 사용자 경험을 제공하며 오프라인에서도 작동할 수 있도록 만들었습니다.</li>
+						<li><a href="https://github.com/GGUKE/Wylie-index" class="link" target="portfolio">URL : https://github.com/GGUKE/Wylie-index</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="info">
+				<a href="">Art center NABI</a>
+				<div class="sub-text">
+					<ul>
+						<li>
+							<ul class="iconskill">
+								<li class="react">React</li>
+								<li class="redux">Redux</li>
+								<li class="javascript">JavaScript</li>
+								<li class="gsap">GSAP</li>
+							</ul>
+						</li>
+						<li>React를 활용한 갤러 클론 코딩입니다.<br>Movie, Tv, Search 페이지로 구성되어 있으며. 반응형으로 제작되었습니다. useState() 함수를 이용해 메인 슬라이더의 영상을 제어했습니다.
+						</li>
+						<li><a href="https://github.com/GGUKE/NABI-index" class="link" target="portfolio">URL : https://github.com/GGUKE/NABI-index</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="info">
+				<a href="">O' kichen</a>
+				<div class="sub-text">
+					<ul>
+						<li>
+							<ul class="iconskill">
+								<li class="pwa">PWA</li>
+								<li class="tailwind">Tailwind CSS</li>
+								<li class="swiperjs">SwiperJS</li>
+								<li class="gsap">GSAP</li>
+							</ul>
+						</li>
+						<li>URL로 접속하여 쉽게 설치하고 이용할 수 있는 프로그레시브 웹 앱입니다.<br>SwiperJS 라이브러리를 통해 컨텐츠와 광고 배너를 둘러볼 수 있게 제작하였으며 검색 버튼을 누르면 검색 화면으로 이동할 수 있습니다. 검색 화면의 '최근에 본 레시피' 섹션에서 '더보기' 버튼을 누르면 상세 페이지로 넘어갈 수 있고, 페이지 이동에 따라 헤더의 디자인과 기능이 변하도록 제작했습니다.
+					   </li>
+						<li><a href="https://github.com/GGUKE/O-kichen-index" class="link" target="portfolio">URL : https://github.com/GGUKE/O-kichen-index</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="info">
+				<a href="">Wconcept</a>
+				<div class="sub-text">
+					<ul>
+						<li>
+							<ul class="iconskill">
+								<li class="html">HTML</li>
+								<li class="css">CSS</li>
+								<li class="javascript">JavaScript</li>
+							</ul>
+						</li>
+						<li>Wconcept 프로젝트는 최신 패션 트렌드를 반영한 쇼핑몰 웹사이트입니다.<br>HTML과 CSS로 깔끔하고 직관적인 쇼핑몰 레이아웃을 설계하고, jQuery를 통해 제품 상세 페이지와 슬라이더를 동적으로 구현했습니다. Figma에서 UI/UX 디자인을 반영하여 쇼핑몰의 브랜드 이미지와 사용자의 편리성을 고려한 디자인을 구현하였습니다.
+						</li>
+						<li><a href="https://github.com/GGUKE/Wconcept-index" class="link" target="portfolio">URL : https://github.com/GGUKE/Wconcept-index</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div id="page4">
+		<div class="title serif">Open Source</div>
+		<div class="main-product">
+			<div class="swiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<a href="">
-							<p class="label">specs1</p>
-							<p class="title">Frontend Dev</p>
-							<p class="description">
-								<span>JavaScript / EcmaScript 2024</span>
-								<span>React / Axios, Redux, Router</span>
-								<span>Node.js / Express, EJS</span>
-								<span>MongoDB</span>
+						<div class="thumb">
+							<a href="https://jg-open-1.vercel.app/" target="_blank"><img src="image/project1.png" alt="project1"></a>
+						</div>
+						<div class="desc">
+							<div class="name serif">Redux Pagination</div>
+							<p>
+								<span>React Hook 함수 활용, useState() useEffect()</span>
+								<span>AJAX Fetch API를 활용하여 데이터 로드</span>
+								<span>데이터 로드 과정에서 로딩 바를 구현</span>
 							</p>
-							<div class="square_line"></div>
-						</a>
+							<a href="https://jg-open-1.vercel.app/" target="_blank" class="btn">View More</a>
+						</div>
 					</div>
 					<div class="swiper-slide">
-						<a href="">
-							<p class="label">specs2</p>
-							<p class="title">Web</p>
-							<p class="description">
-								<span>HTML Accessbility</span>
-								<span>CSS + SASS Prefix</span>
-								<span>jQuery Library</span>
+						<div class="thumb">
+							<a href="https://jg-open-2.vercel.app/" target="_blank"><img src="image/project2.png" alt="project2"></a>
+						</div>
+						<div class="desc">
+							<div class="name serif">Menu Style Interaction</div>
+							<p>
+								<span>useState와 useEffect로 네비게이션 데이터 관리</span>
+								<span>Fetch API로 JSON 데이터 비동기 로드</span>
+								<span>마우스/키보드 인터랙션으로 메뉴 스타일 변경</span>
+								<span>서브 메뉴가 있는 다단계 네비게이션</span>
 							</p>
-							<div class="square_line"></div>
-						</a>
+							<a href="https://jg-open-2.vercel.app/" target="_blank" class="btn">View More</a>
+						</div>
 					</div>
 					<div class="swiper-slide">
-						<a href="">
-							<p class="label">specs3</p>
-							<p class="title">Mobile Dev</p>
-							<p class="description">
-								<span>PWA : Progressive Web App</span>
-								<span>Responsive CSS</span>
-								<span>Tailwind CSS Framework</span>
+						<div class="thumb">
+							<a href="https://jg-open-3.vercel.app/" target="_blank"><img src="image/project3.png" alt="project3"></a>
+						</div>
+						<div class="desc">
+							<div class="name serif">Data Fetching & Loading</div>
+							<p>
+								<span>useState와 useEffect로 뉴스 데이터 관리</span>
+								<span>AJAX Fetch로 비동기적으로 JSON 뉴스 데이터 불러오기</span>
+								<span>로딩 애니메이션과 동적 뉴스 항목 렌더링</span>
 							</p>
-							<div class="square_line"></div>
-						</a>
+							<a href="https://jg-open-3.vercel.app/" target="_blank" class="btn">View More</a>
+						</div>
 					</div>
 					<div class="swiper-slide">
-						<a href="">
-							<p class="label">I aspire to go further and grow.</p>
-							<p class="title"></p>
-							<div class="square_line"></div>
-						</a>
+						<div class="thumb">
+							<a href="https://jg-open-4.vercel.app/" target="_blank"><img src="image/project4.png" alt="project4"></a>
+						</div>
+						<div class="desc">
+							<div class="name serif">GSAP Animation</div>
+							<p>
+								<span>데이터 로딩과 렌더링 방식</span>
+								<span>GSAP 애니메이션 적용</span>
+								<span>접근성 관련 처리</span>
+								<span>이벤트 처리 및 상태 관리</span>
+							</p>
+							<a href="https://jg-open-4.vercel.app/" target="_blank" class="btn">View More</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="thumb">
+							<a href="https://jg-open-5.vercel.app/" target="_blank"><img src="image/project5.png" alt="project5"></a>
+						</div>
+						<div class="desc">
+							<div class="name serif">Swiper for Mobile</div>
+							<p>
+								<span>화면 크기에 따라 모바일/데스크탑용 슬라이더 분기</span>
+								<span>모바일에서 Swiper로 슬라이드 수와 레이아웃 조정</span>
+								<span>데스크탑은 기본 HTML 슬라이더 사용</span>
+								<span>반응형 레이아웃 및 페이지네이션 지원</span>
+							</p>
+							<a href="https://jg-open-5.vercel.app/" target="_blank" class="btn">View More</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="thumb">
+							<a href="https://jg-open-6.vercel.app/" target="_blank"><img src="image/project6.png" alt="project6"></a>
+						</div>
+						<div class="desc">
+							<div class="name serif">Products with useState</div>
+							<p>
+								<span>"More" 버튼 클릭 시 3개의 제품을 추가로 표시합니다.</span>
+								<span>제품의 이미지, 제목, 설명을 표시합니다.</span>
+								<span>제품 데이터는 표시 수를 조정합니다.</span>
+							</p>
+							<a href="https://jg-open-6.vercel.app/" target="_blank" class="btn">View More</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="thumb">
+							<a href="https://jg-open-7.vercel.app/" target="_blank"><img src="image/project7.png" alt="project7"></a>
+						</div>
+						<div class="desc">
+							<div class="name serif">State Updates</div>
+							<p>
+								<span>제목과 날짜로 포트폴리오를 정렬하는 React 앱입니다.</span>
+								<span>useState, useEffect로 데이터 관리 및 렌더링 처리합니다.</span>
+								<span>컴포넌트로 각 항목을 표시하며, 정렬은 클릭 시 상태 업데이트로 반영됩니다.</span>
+							</p>
+							<a href="https://jg-open-7.vercel.app/" target="_blank" class="btn">View More</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -139,224 +325,38 @@
 	</div>
 </section>
 
-<section id="page3">
-	<div class="title serif">Project</div>
-	<div class="inner">
-		<div class="info">
-			<a href="">Wylie</a>
-			<div class="sub-text">
-				<ul>
-					<li>
-						<ul class="iconskill">
-							<li class="react">React</li>
-							<li class="redux">Redux</li>
-							<li class="javascript">JavaScript</li>
-							<li class="gsap">GSAP</li>
-							<li class="pwa">PWA</li>
-						</ul>
-					</li>
-					<li>React를 활용하고 Redux로 상태 관리하여 제작한 클론 사이트입니다.<br>모바일과 PC에서 볼 수 있게 최대한 반응형을고려하여 작업하였으며 Redux, redux-toolkit에 대한 학습이 되었습니다. 또한, PWA(progressive web app)를 적용하여 모바일 기기에서도 원활한 사용자 경험을 제공하며 오프라인에서도 작동할 수 있도록 만들었습니다.</li>
-					<li><a href="https://github.com/GGUKE/Wylie-index" class="link" target="portfolio">URL : https://github.com/GGUKE/Wylie-index</a></li>
-				</ul>
+<footer>
+	<div id="footer">
+		<div class="ft-wrap">
+			<div class="ft-left">
+				<div class="ft-logo">
+					<a href=""><span>{</span> GGUKE <span>}</span></a>
+				</div>
+				<div class="ft-info">
+					<p>
+						<span><strong>PHONE</strong>010-9923-4795</span>
+						<span><strong>MAIL</strong>pllbong2020@naver.com</span>
+					</p>
+					<p>
+						<span><strong>GIT</strong><a href="https://github.com/GGUKE/"  target="_blank">https://github.com/GGUKE/</a></span>
+						<span><strong>PORTFOLIO</strong>
+							<a href="https://github.com/GGUKE/JG-pf" target="_blank">https://github.com/GGUKE/JG-pf</a>
+						</span>
+					</p>
+				</div>
 			</div>
-		</div>
-		<div class="info">
-			<a href="">Art center NABI</a>
-			<div class="sub-text">
-				<ul>
-					<li>
-						<ul class="iconskill">
-							<li class="react">React</li>
-							<li class="redux">Redux</li>
-							<li class="javascript">JavaScript</li>
-							<li class="gsap">GSAP</li>
-						</ul>
-					</li>
-					<li>React를 활용한 갤러 클론 코딩입니다.<br>Movie, Tv, Search 페이지로 구성되어 있으며. 반응형으로 제작되었습니다. useState() 함수를 이용해 메인 슬라이더의 영상을 제어했습니다.
-					</li>
-					<li><a href="https://github.com/GGUKE/NABI-index" class="link" target="portfolio">URL : https://github.com/GGUKE/NABI-index</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="info">
-			<a href="">O' kichen</a>
-			<div class="sub-text">
-				<ul>
-					<li>
-						<ul class="iconskill">
-							<li class="pwa">PWA</li>
-							<li class="tailwind">Tailwind CSS</li>
-							<li class="swiperjs">SwiperJS</li>
-							<li class="gsap">GSAP</li>
-						</ul>
-					</li>
-					<li>URL로 접속하여 쉽게 설치하고 이용할 수 있는 프로그레시브 웹 앱입니다.<br>SwiperJS 라이브러리를 통해 컨텐츠와 광고 배너를 둘러볼 수 있게 제작하였으며 검색 버튼을 누르면 검색 화면으로 이동할 수 있습니다. 검색 화면의 '최근에 본 레시피' 섹션에서 '더보기' 버튼을 누르면 상세 페이지로 넘어갈 수 있고, 페이지 이동에 따라 헤더의 디자인과 기능이 변하도록 제작했습니다.
-				   </li>
-					<li><a href="https://github.com/GGUKE/O-kichen-index" class="link" target="portfolio">URL : https://github.com/GGUKE/O-kichen-index</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="info">
-			<a href="">Wconcept</a>
-			<div class="sub-text">
-				<ul>
-					<li>
-						<ul class="iconskill">
-							<li class="html">HTML</li>
-							<li class="css">CSS</li>
-							<li class="javascript">JavaScript</li>
-						</ul>
-					</li>
-					<li>Wconcept 프로젝트는 최신 패션 트렌드를 반영한 쇼핑몰 웹사이트입니다.<br>HTML과 CSS로 깔끔하고 직관적인 쇼핑몰 레이아웃을 설계하고, jQuery를 통해 제품 상세 페이지와 슬라이더를 동적으로 구현했습니다. Figma에서 UI/UX 디자인을 반영하여 쇼핑몰의 브랜드 이미지와 사용자의 편리성을 고려한 디자인을 구현하였습니다.
-					</li>
-					<li><a href="https://github.com/GGUKE/Wconcept-index" class="link" target="portfolio">URL : https://github.com/GGUKE/Wconcept-index</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>	
-</section>
-
-<section id="page4">
-	<div class="title serif">Open Source</div>
-	<div class="main-product">
-		<div class="swiper">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<div class="thumb">
-						<a href="https://jg-open-1.vercel.app/" target="_blank"><img src="image/project1.png" alt="project2"></a>
-					</div>
-					<div class="desc">
-						<div class="name serif">Redux Pagination</div>
-						<p>
-							<span>React Hook 함수 활용, useState() useEffect()</span>
-							<span>AJAX Fetch API를 활용하여 데이터 로드</span>
-							<span>데이터 로드 과정에서 로딩 바를 구현</span>
-						</p>
-						<a href="https://jg-open-1.vercel.app/" target="_blank" class="btn">View More</a>
-					</div>
+			<div class="ft-right">
+				<div class="ft-link">
+					<a href="">About Us</a>
+					<a href="" class="privacy-btn"><strong>개인정보처리방침</strong></a>
 				</div>
-				<div class="swiper-slide">
-					<div class="thumb">
-						<a href="https://jg-open-2.vercel.app/" target="_blank"><img src="image/project2.png" alt="project3"></a>
-					</div>
-					<div class="desc">
-						<div class="name serif">Menu Style Interaction</div>
-						<p>
-							<span>useState와 useEffect로 네비게이션 데이터 관리</span>
-							<span>Fetch API로 JSON 데이터 비동기 로드</span>
-							<span>마우스/키보드 인터랙션으로 메뉴 스타일 변경</span>
-							<span>서브 메뉴가 있는 다단계 네비게이션</span>
-						</p>
-						<a href="https://jg-open-2.vercel.app/" target="_blank" class="btn">View More</a>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="thumb">
-						<a href="https://jg-open-3.vercel.app/" target="_blank"><img src="image/project3.png" alt="project1"></a>
-					</div>
-					<div class="desc">
-						<div class="name serif">Data Fetching & Loading</div>
-						<p>
-							<span>useState와 useEffect로 뉴스 데이터 관리</span>
-							<span>AJAX Fetch로 비동기적으로 JSON 뉴스 데이터 불러오기</span>
-							<span>로딩 애니메이션과 동적 뉴스 항목 렌더링</span>
-						</p>
-						<a href="https://jg-open-3.vercel.app/" target="_blank" class="btn">View More</a>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="thumb">
-						<a href="https://jg-open-4.vercel.app/" target="_blank"><img src="image/project4.png" alt="project4"></a>
-					</div>
-					<div class="desc">
-						<div class="name serif">GSAP Animation</div>
-						<p>
-							<span>데이터 로딩과 렌더링 방식</span>
-							<span>GSAP 애니메이션 적용</span>
-							<span>접근성 관련 처리</span>
-							<span>이벤트 처리 및 상태 관리</span>
-						</p>
-						<a href="https://jg-open-4.vercel.app/" target="_blank" class="btn">View More</a>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="thumb">
-						<a href="https://jg-open-5.vercel.app/" target="_blank"><img src="image/project5.png" alt="project6"></a>
-					</div>
-					<div class="desc">
-						<div class="name serif">Swiper for Mobile</div>
-						<p>
-							<span>화면 크기에 따라 모바일/데스크탑용 슬라이더 분기</span>
-							<span>모바일에서 Swiper로 슬라이드 수와 레이아웃 조정</span>
-							<span>데스크탑은 기본 HTML 슬라이더 사용</span>
-							<span>반응형 레이아웃 및 페이지네이션 지원</span>
-						</p>
-						<a href="https://jg-open-5.vercel.app/" target="_blank" class="btn">View More</a>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="thumb">
-						<a href="https://jg-open-6.vercel.app/" target="_blank"><img src="image/project6.png" alt="project5"></a>
-					</div>
-					<div class="desc">
-						<div class="name serif">Products with useState</div>
-						<p>
-							<span>"More" 버튼 클릭 시 3개의 제품을 추가로 표시합니다.</span>
-							<span>제품의 이미지, 제목, 설명을 표시합니다.</span>
-							<span>제품 데이터는 표시 수를 조정합니다.</span>
-						</p>
-						<a href="https://jg-open-6.vercel.app/" target="_blank" class="btn">View More</a>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="thumb">
-						<a href="https://jg-open-7.vercel.app/" target="_blank"><img src="image/project7.png" alt="project5"></a>
-					</div>
-					<div class="desc">
-						<div class="name serif">State Updates</div>
-						<p>
-							<span>제목과 날짜로 포트폴리오를 정렬하는 React 앱입니다.</span>
-							<span>useState, useEffect로 데이터 관리 및 렌더링 처리합니다.</span>
-							<span>컴포넌트로 각 항목을 표시하며, 정렬은 클릭 시 상태 업데이트로 반영됩니다.</span>
-						</p>
-						<a href="https://jg-open-7.vercel.app/" target="_blank" class="btn">View More</a>
-					</div>
+				<div class="ft-sns">
+					<a href=""><i class="xi-linkedin"></i></a>
+					<a href=""><i class="xi-facebook-official"></i></a>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-
-<footer id="footer">
-	<div class="ft-wrap">
-		<div class="ft-left">
-			<div class="ft-logo">
-				<a href=""><span>{</span> GGUKE <span>}</span></a>
-			</div>
-			<div class="ft-info">
-				<p>
-					<span><strong>PHONE</strong>010-9923-4795</span>
-					<span><strong>MAIL</strong>pllbong2020@naver.com</span>
-				</p>
-				<p>
-					<span><strong>GIT</strong><a href="https://github.com/GGUKE/"  target="_blank">https://github.com/GGUKE/</a></span>
-					<span><strong>PORTFOLIO</strong>
-						<a href="https://github.com/GGUKE/JG-pf" target="_blank">https://github.com/GGUKE/JG-pf</a>
-					</span>
-				</p>
-			</div>
-		</div>
-		<div class="ft-right">
-			<div class="ft-link">
-				<a href="">About Us</a>
-				<a href="" class="privacy-btn"><strong>개인정보처리방침</strong></a>
-			</div>
-			<div class="ft-sns">
-				<a href=""><i class="xi-linkedin"></i></a>
-				<a href=""><i class="xi-facebook-official"></i></a>
-			</div>
-		</div>
-	</div>
+	<div>
 </footer>
 
 </body>

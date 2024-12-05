@@ -7,10 +7,12 @@ const ui={
 		this.page4();
 	},
 	header(){
+		let tab = document.querySelector(".tab");
+
 		document.querySelector('.tab').addEventListener('click', function(e) {
 			e.preventDefault(); 
 			
-			let tab = this.closest('.tab');
+			// let tab = this.closest('.tab');
 			tab.classList.toggle('active');
 		});
 

@@ -37,7 +37,7 @@ body.active #header {
 	background-color: rgba(0,0,0,.1);
 }
 
-section > .title {
+section .title {
 	text-align: center;
 	font-size: 3.6em;
 	font-weight: 700;
@@ -531,7 +531,7 @@ body.active #header.on .header_inner .tab .open {
 body.active #main .swiper-slide a p{
 	color: #fff;
 }
-#main .swiper-slide a p.title {
+#main .swiper-slide a p.titles {
 	display: block;
 	overflow: hidden;
 	line-height: 40px;
